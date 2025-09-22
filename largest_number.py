@@ -10,4 +10,10 @@
 import math
 from math import *
 
-quadratic_equation = 
+input_1 = float(input("Enter number 1:"))
+input_2 = float(input("Enter number 2:"))
+input_3 = float(input("Enter number 3:"))
+
+print("The largest number is", max(input_1, input_2, input_3))
+
+#this is a comment
