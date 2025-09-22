@@ -25,8 +25,8 @@ if num_days < 0:
 elif num_days <= 10:
     gadgets_made = num_days * 10
 elif 10< num_days < 50:
-    gadgets_made =
+    gadgets_made = (100 + ((num_days - 10) * ((11, num_days))))
 elif  num_days >= 50:
-    gadgets_made =
+    gadgets_made = (1320 + (num_days - 50) * 50)
 
-print("The sum total number of gadgets produced on", num_days, "is", gadgets_made)
+print("The sum total number of gadgets produced on day", num_days, "is", gadgets_made)
