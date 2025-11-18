@@ -23,3 +23,23 @@ import matplotlib.pyplot as plt
 #“trace” out.
 #Note: the purpose of this activity is to get practice with numpy, so you should use numpy for your
 #operations, even if you find it easier to perform this computation a different way
+
+# Define the initial point and matrix
+point = np.array([[0], [1]])
+matrix = np.array([[1.01, 0.09], [-0.09, 1.01]])
+points = []
+# Perform the matrix multiplication 200 times
+for _ in range(200):
+    point = np.dot(matrix, point)
+    points.append((point[0, 0], point[1, 0]))
+# Convert the list of points to a numpy array for easier plotting
+points = np.array(points)
+# Plot the points
+plt.figure(figsize=(8, 8))
+plt.plot(points[:, 0], points[:, 1], marker='o', markersize=2, linestyle='-')
+plt.title('Trace of Points after Repeated Matrix Multiplication')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.axis('equal')
+plt.grid(True)
+plt.show()
