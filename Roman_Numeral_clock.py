@@ -1,7 +1,14 @@
+# By submitting this assignment, I agree to the following:
+# “Aggies do not lie, cheat, or steal, or tolerate those who do”
+# “I have not given or received any unauthorized aid on this assignment”
+#
+# Name: Tyler Abell
+# Section: ENGR-102:538,560
+# Assignment: LAB 13b_1
+# Date: 24 Nov 2025
 import turtle
 
 def digit_to_roman(digit):
-    # Map digits to Roman numerals as they appear on a clock
     roman_map = {
         '0': '',
         '1': 'I',
@@ -118,7 +125,7 @@ def draw_time(hours, minutes, screen, t):
     # Convert time to string with leading zeros
     time_str = f"{hours:02d}:{minutes:02d}"
 
-    # Convert hour digits - special handling for 10, 11, 12
+    # Convert hour digits
     if hours == 10:
         hour_roman = 'X'
     elif hours == 11:

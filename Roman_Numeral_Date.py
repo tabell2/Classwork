@@ -1,9 +1,18 @@
+# By submitting this assignment, I agree to the following:
+# “Aggies do not lie, cheat, or steal, or tolerate those who do”
+# “I have not given or received any unauthorized aid on this assignment”
+#
+# Name: Tyler Abell
+# Section: ENGR-102:538,560
+# Assignment: LAB 13b_2
+# Date: 24 Nov 2025
+
 import turtle
 
 
 def digit_to_roman(digit):
     roman_map = {
-        '0': '',  # 0 -> nothing (blank)
+        '0': '',
         '1': 'I',
         '2': 'II',
         '3': 'III',
